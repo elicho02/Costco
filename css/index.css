@@ -1,0 +1,356 @@
+@import url(reset.css);
+@import url(font.css);
+
+* {box-sizing: border-box;}
+html {scroll-behavior: smooth;}
+
+.chat{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    font-size: 50px;
+    cursor: pointer;
+} 
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Pretendard Variable';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+}
+
+nav #head {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    align-items: center; 
+    height: 100px;
+}
+
+header .menu_box{
+    display: none;  
+    position: absolute;
+    z-index: 200;
+    width: 300px;
+    height: 400px;
+    margin-top: 34px;
+    margin-right: 75px;
+    top: 0;
+    right: 0;
+    text-indent: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    border-radius: 30px 0 30px 30px;
+    cursor: pointer;
+}
+header .menu_box p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: left;
+    border-bottom: 1px solid #f5f5f5;
+}
+header .menu_box i{
+    font-size: 20px;
+    margin-left: 150px;
+}
+.logo {
+    height: 150px;
+    width: 200px;
+}
+
+#gnb {
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+    font-size: 20px;
+}
+
+.sub.s1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    position: relative;
+}
+.sub li:hover{color: crimson;}
+
+main{
+    background-color: #216FAF;
+    z-index: -1;
+}
+
+main span:nth-child(1){
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+}
+main span:nth-child(2){
+    background-color: #E41736;
+    margin-top: 15px;
+    left: 35.2%;
+    width: 300px;
+    height: 50px;
+    opacity: 80%;
+        /* overflow: hidden; */
+    transition: 0.5s;
+    position: absolute;
+}
+main p span::after{
+    content: '';
+}
+main h5,
+main p{
+    color: #fff;
+    align-items: center; 
+    justify-content: center; 
+    font-weight: 600;
+    font-size: 35px;
+    text-align: left;
+    left: 35%;
+    position: relative;
+}
+main h5{
+    padding-top: 20px;
+    font-size: 30px;
+}
+main h5 em{
+    font-style: normal;
+    font-weight: bold;
+}
+main p em::before{
+    content: '';
+}
+
+#main-images {
+    display: flex;
+    justify-content: right;
+    height: 500px;
+    width: 100%;
+}
+
+#main-images img {
+    max-height: 100%; 
+    width: auto; 
+}
+
+#section1{
+    margin-top: 50px;
+}
+
+#section1 .apple{height: 30px;}
+#section1 img{
+    height: 250px;
+    transition: 0.35s;
+}
+
+.section1-apple{margin-bottom: 100px;}
+.section1-apple .details{
+    display: inline-block;
+    width: 150px;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+#section1 h4{
+    display: inline;
+    font-size: 30px;
+    margin-right: 100px;
+    padding-right: 500px;
+    left: 10%;
+}
+.section1-images{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+}
+.section1-images img:hover{
+    transform: scale(1.2);
+}
+.section1-text{
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 140px;
+}
+#section1 span{
+    color: #999;
+}
+#section1 span:hover{
+    color: #000;
+    cursor: pointer;
+}
+#section2 img{
+    height: 600px;
+    width: 600px;
+    transition: 0.35s;
+}
+.section2-inner{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.section2-inner a{transition: 0.5s;}
+.section2-inner a:hover{
+    background-color: #406D03;
+}
+
+#mid-stopper{
+    width: 100%;
+    height: 100px;
+    background-color: #e5e5e5;
+    position: absolute;
+}
+
+#section3{
+    margin-top: 300px;
+}
+.section3-images{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.section3-images img{
+    height: 400px;
+    width: 600px;
+}
+
+section4{}
+.section5-inner{
+    display: flex;
+    gap: 30px;
+    margin-left: 350px;
+}
+.register{
+    display: inline-block;
+    width: 150px;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 1000px;
+    margin-bottom: 10px;
+}
+.register span{
+    font-size: 13px;
+    vertical-align: middle;
+    margin-left: 40px;
+}
+#section5 .basicBenefit,
+#section5 .moreBenefit{
+    margin-top: 20px;
+    font-size: 13px;
+    background-color: #f8f8f8;
+    line-height: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+}
+.hyundai-card-logo{
+    height: 50px;
+    width: 250px;
+}
+#section5 .basicBenefit{}
+#section5 .moreBenefit{
+
+}
+.costco-card{
+    margin-top: 100px;
+    height: 400px;
+    width: 1200px;
+}
+
+#section6{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.center{
+    margin-top: 50px;
+    width: 300px;
+    height: 350px;
+    background-color: #e5e5e5;
+    transition: 0.35s;
+}
+.center:hover{
+    background-color: rgb(87, 87, 87);
+    color: #fff;
+}
+.center p{
+    font-size: 13px;
+    border-radius: 30px;
+    background-color: #fff;
+    width: 120px;
+    margin-left: 90px;
+}
+.center:hover.center p{
+    background: #000;
+    color: #fff;
+}
+footer {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 100px;
+    height: auto; 
+    width: 100%;
+    background-color: #216FAF;
+    color: #fff;
+    text-align: left;
+    line-height: 30px;
+}
+footer .costco-logo {
+    height: 150px;
+    width: 250px;
+    position: relative;
+    left: 100px;
+}
+
+.final{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    cursor: pointer;
+}
+
+.info{
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 50px;
+    margin-left: 160px;
+    text-align: left
+}
+
+footer .final p:hover{color: #e6e6e6;}
+
+/* active */
+#head i:last-child.active{
+    /* display: none; */
+    height: 300px;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
